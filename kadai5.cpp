@@ -1,7 +1,5 @@
-#include <stdio.h>
 #include <iostream>
 using namespace std;
-
 
 class hm{
 public:
@@ -34,7 +32,6 @@ public:
   hm arrivalTime;
   trainTicket(): transTicket(){};
 };
-
 
 int main(){
   int ticketNum;

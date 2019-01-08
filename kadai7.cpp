@@ -25,7 +25,7 @@ public:
     cin >> memberid;
   };
   void showData(){
-    cout << name << "会員番号: " << memberid << "\n";
+    cout << name << "　会員     会員番号: " << memberid << "\n";
   };
 };
 
@@ -40,7 +40,7 @@ public:
     cin >> memberid;
   };
   void showData(){
-    cout << name << "　学年: " << grade << "  会員: " << memberid << "\n";
+    cout << name << "　学生会員 学年: " << grade << "  会員番号: " << memberid << "\n";
   };
 };
 
@@ -56,7 +56,7 @@ public:
     cin >> phone;
   };
   void showData(){
-    cout << name << "非会員: " << email << "\n";
+    cout << name << "　非会員   メールアドレス: " << email << "  電話番号:" << phone << "\n";
   };
 };
 

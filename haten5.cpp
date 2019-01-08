@@ -19,6 +19,6 @@ public:
 };
 
 int main(){
-    protectedMovie PM("どろろ", "百鬼丸");
-    cout << PM.code << ":" << PM.title << "\n";
+    protectedMovie protectedMovie_a("movie_xmen", "1234");
+    cout << protectedMovie_a.title << ":" << protectedMovie_a.code << "\n";
 };

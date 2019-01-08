@@ -56,8 +56,8 @@ int main(){
   for(int i = 0; i < ticketNum; i++){
     transTicket t = tickets[i];
     t.user->setName();
-    cout << " " << t.id << " : " << t.user->getName() << "  " << t.origin << t.departureTime.hour << " : " << t.departureTime.minute;
-    cout << " => " << t.destination << t.arrivalTime.hour << " : " << t.arrivalTime.minute << "\n";
+    cout << " " << t.id << " : " << t.user->getName() << "  " << t.origin << " " << t.departureTime.hour << " : " << t.departureTime.minute;
+    cout << " => " << t.destination << " " << t.arrivalTime.hour << " : " << t.arrivalTime.minute << "\n";
     cout << "\n";
   }
   cout << "\n";

@@ -23,6 +23,11 @@ addressbook::addressbook(){
   numberOfFriends = 0;
 }
 
+void addressbook::addFriend(string n){
+    friends[numberOfFriends].name = n;
+    numberOfFriends++;
+}
+
 void addressbook::addFriend(string n, string a){
   friends[numberOfFriends].name = n;
   friends[numberOfFriends].address = a;
@@ -40,12 +45,10 @@ person addressbook::find(string query){
   for(int i=0; i<numberOfFriends; i++){
     if(friends[i].name == query){
       return friends[i];
-    }else{
-      person no_one;
-      no_one.name = "";
-      return no_one;
     }
   }
+  person no_one;
+  return no_one;
 }
 
 
@@ -69,8 +72,8 @@ int main(){
   cin >> query;
   found = abook.find(query);
   if(found.name == ""){
-    cout << "\n見つかりませんでした。\n";
+    cout << "\n見つかりませんでした。\n\n";
   }else{
-    cout << "\n" << found.name << "の住所は" << found.address << "です。\n";
+    cout << "\n" << found.name << "の住所は" << found.address << "です。\n\n";
   }
 }

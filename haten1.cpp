@@ -2,7 +2,6 @@
 #include <iostream>
 using namespace std;
 
-
 class hm{
 public:
   int hour;
@@ -58,8 +57,8 @@ int main(){
   cout << "\n\nチケット利用者一覧：\n";
   for(int i = 0; i < ticketNum; i++){
     trainTicket t = tickets[i];
-    cout << " " << t.id << " : " << t.user->name << "  " << t.origin << t.departureTime.hour << " : " << t.departureTime.minute;
-    cout << " => " << t.destination << t.arrivalTime.hour << " : " << t.arrivalTime.minute << "\n";
+    cout << " " << t.id << " : " << t.user->name << "  " << t.origin << " " << t.departureTime.hour << " : " << t.departureTime.minute;
+    cout << " => " << t.destination << " " << t.arrivalTime.hour << " : " << t.arrivalTime.minute << "\n";
     cout << "\n";
   }
   cout << "\n";

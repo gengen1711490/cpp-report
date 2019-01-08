@@ -13,11 +13,17 @@ class addressbook{
 public:
   addressbook();
   void listFriends();
+  void addFriend(string n);
   void addFriend(string n, string a);
 };
 
 addressbook::addressbook(){
   numberOfFriends = 0;
+}
+
+void addressbook::addFriend(string n){
+    friends[numberOfFriends].name = n;
+    numberOfFriends++;
 }
 
 void addressbook::addFriend(string n, string a){
